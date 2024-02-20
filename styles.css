@@ -16,6 +16,7 @@ header h2 {
     font-weight: 300; /* H2 style weight */
     color: #226f54; /* green color */
     width: 33.33%; /* 1/3 of the width of the page */
+      margin: 0 auto; /* center the paragraph */
 }
 
 header img {
