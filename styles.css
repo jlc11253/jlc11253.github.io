@@ -145,7 +145,7 @@ div {
             display: none;
             margin-top: 10px;
             border: 2px solid #226f54;
-            padding: 20px 50px;
+            padding: 5px 5px;
             background-color: transparent;
 
 			 }
@@ -153,6 +153,7 @@ div {
 
 		.resultbox_inside {
 			border: 2px solid #226f54;
+			padding: 20px 50px;
 			
 }
 
