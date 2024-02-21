@@ -101,6 +101,11 @@ div {
 				.textbox {
 		max-width: 90%;
 	}
+			
+			  .RSVPbox {
+		max-width: 90%;
+	padding: 100px 0px 100px 0px;
+	}
         }
 
  #emailInput {
