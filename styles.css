@@ -99,6 +99,9 @@ div {
         }
 
 
+ #result1, #result2 {
+            display: none;
+        }
 
 
 
