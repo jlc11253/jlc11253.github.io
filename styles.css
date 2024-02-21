@@ -68,10 +68,10 @@ div {
             flex-wrap: wrap;
         }
 
-        .box {
+       .box {
             width: 200px;
             height: 200px;
-            margin: 10px;
+            margin: 50px 100px 50px 100px;
             background-color: transparent;
             display: flex;
             justify-content: center;
