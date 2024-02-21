@@ -108,6 +108,7 @@ div {
             color: #226f54;
             font-family: 'Cormorant Garamond', serif;
             padding: 5px;
+	 		margin: 10px 5px;
         }
 
         button {
@@ -117,13 +118,16 @@ div {
             background-color: transparent;
             font-family: 'Cormorant Garamond', serif;
             cursor: pointer;
-            padding: 0 10px;
+            padding: 0px 10px;
+			margin:10px 5px;
         }
 
-        #result1, #result2 {
+         #result1, #result2 {
             display: none;
             margin-top: 10px;
-        }
+            border: 2px solid #226f54;
+            padding: 10px;
+            background-color: rgba(34, 111, 84, 0.1);
 
 
 
