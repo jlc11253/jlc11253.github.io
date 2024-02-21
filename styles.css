@@ -174,5 +174,10 @@ div {
 			margin:10px 5px;
         }
 
-
+.footerbox {
+	background-color:#E9E9E9;
+	color:black;
+	text-align: center;
+	padding: 50px;
+}
 
