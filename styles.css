@@ -106,9 +106,15 @@ div {
 		max-width: 90%;
 	}
 			
-			  .RSVPbox {
+	
+	.RSVPbox {
 		max-width: 90%;
-	padding: 100px 0px 100px 0px;
+		padding: 100px 0px 100px 0px;
+	}
+			
+	.registrybox {
+		max-width: 90%;
+		padding: 100px 0px 100px 0px;
 	}
 			
 			.headercontainerbox {
@@ -144,6 +150,12 @@ div {
 
 			 }
 
+
+		.resultbox_inside {
+			border: 2px solid #226f54;
+			
+}
+
         .submitbutton {
             height: 30px;
             border: 2px solid #226f54;
@@ -152,7 +164,7 @@ div {
 			text-decoration: none;
             font-family: 'Cormorant Garamond', serif;
             cursor: pointer;
-            padding: 0px 10px;
+            padding: 20px 30px;
 			margin:10px 5px;
         }
 
