@@ -61,34 +61,34 @@ div {
 
 
 
-.responsive-table {
-    width: 100%;
-    border-collapse: collapse;
-}
+.container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
 
-.box {
-    border: 0px solid #000000;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-	
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-}
-
-@media only screen and (max-width: 600px) {
-    .box {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin-bottom: 10px;
-        text-align: left;
-    }
-	
-	.textbox {
+        @media (max-width: 600px) {
+            .box {
+                width: calc(100% - 20px);
+            }
+			
+				.textbox {
 		max-width: 90%;
 	}
-}
+        }
+
+
 
 
 
