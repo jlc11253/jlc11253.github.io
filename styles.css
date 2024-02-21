@@ -49,6 +49,11 @@ div {
 	padding: 30px 0px 30px 0px;
 	}
 
+  .RSVPbox {
+		max-width: 40%;
+	padding: 100px 0px 100px 0px;
+	}
+
 .greenbox {
 	background-color: #226f54;
 	padding: 50px 40px 50px 40px;
