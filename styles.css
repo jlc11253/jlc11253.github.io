@@ -54,6 +54,10 @@ div {
 	padding: 100px 0px 100px 0px;
 	}
 
+.headercontainerbox {
+	max-width: 50%;
+}
+
 .greenbox {
 	background-color: #226f54;
 	padding: 50px 40px 50px 40px;
@@ -106,6 +110,10 @@ div {
 		max-width: 90%;
 	padding: 100px 0px 100px 0px;
 	}
+			
+			.headercontainerbox {
+	max-width: 70%;
+}
         }
 
  #emailInput {
@@ -134,7 +142,18 @@ div {
             padding: 20px 50px;
             background-color: transparent;
 
+			 }
 
+        .submitbutton {
+            height: 30px;
+            border: 2px solid #226f54;
+            color: #226f54;
+            background-color: transparent;
+            font-family: 'Cormorant Garamond', serif;
+            cursor: pointer;
+            padding: 0px 10px;
+			margin:10px 5px;
+        }
 
 
 
