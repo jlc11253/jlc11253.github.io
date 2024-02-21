@@ -62,7 +62,47 @@ Abergavenny NP7 7LG</span>
 
 	</div>
 	
+		
+	<center>
+	<div>
 	
+		<h2>Guest List Check</h2>
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <button onclick="checkGuestList()">Check</button>
+
+    <div id="result1">
+        <!-- Content for guests on List 1 -->
+        <p>You are on List 1. Welcome!</p>
+    </div>
+
+    <div id="result2">
+        <!-- Content for guests on List 2 -->
+        <p>You are on List 2. Welcome!</p>
+    </div>
+
+    <script>
+        function checkGuestList() {
+            var email = document.getElementById('emailInput').value;
+            var list1 = ['email1@example.com', 'email2@example.com']; // List 1
+            var list2 = ['email3@example.com', 'email4@example.com']; // List 2
+
+            if (list1.includes(email)) {
+                document.getElementById('result1').style.display = 'block';
+                document.getElementById('result2').style.display = 'none';
+            } else if (list2.includes(email)) {
+                document.getElementById('result1').style.display = 'none';
+                document.getElementById('result2').style.display = 'block';
+            } else {
+                document.getElementById('result1').style.display = 'none';
+                document.getElementById('result2').style.display = 'none';
+                alert('You are not on either list. Please contact the event organizer.');
+            }
+        }
+    </script>
+		
+		
+	</div>
+	</center>
 	
 	
 </body>
