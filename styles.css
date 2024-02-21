@@ -49,6 +49,11 @@ div {
 	padding: 30px 0px 30px 0px;
 	}
 
+  .textbox_result {
+		max-width: 70%;
+	padding: 30px 0px 30px 0px;
+	}
+
   .RSVPbox {
 		max-width: 40%;
 	padding: 100px 0px 100px 0px;
