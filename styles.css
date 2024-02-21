@@ -98,11 +98,27 @@ div {
 	}
         }
 
-
- #result1, #result2 {
-            display: none;
+ #emailInput {
+            border: 2px solid #226f54;
+            color: #226f54;
+            font-family: 'Cormorant Garamond', serif;
+            padding: 5px;
         }
 
+        button {
+            height: 30px;
+            border: 2px solid #226f54;
+            color: #226f54;
+            background-color: transparent;
+            font-family: 'Cormorant Garamond', serif;
+            cursor: pointer;
+            padding: 0 10px;
+        }
+
+        #result1, #result2 {
+            display: none;
+            margin-top: 10px;
+        }
 
 
 
