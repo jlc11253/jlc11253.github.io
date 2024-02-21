@@ -149,6 +149,7 @@ div {
             border: 2px solid #226f54;
             color: white;
             background-color: #226f54;
+			text-decoration: none;
             font-family: 'Cormorant Garamond', serif;
             cursor: pointer;
             padding: 0px 10px;
