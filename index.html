@@ -1,145 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Single Page Website</title>
-  <!-- Adobe Fonts stylesheet -->
-  <link rel="stylesheet" href="https://use.typekit.net/nei6ljt.css">
-  <!-- Main CSS file -->
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joe & Victoria's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- Topbox Section -->
-  <topbox>
-    <!-- Full-width top header -->
-    <h1>
-      <span>MAKING</span> <span>THINGS</span> <span>HAPPEN</span>
-    </h1>
-    <div class="row">
-      <div class="left">
-        <p>When I became your First Minister last year, I knew that we had some work to do. Voters across Wales were making it clear to me that you felt we had lost touch – that your Government needed to refocus.</p>
-        <p>That is why the <em>first thing</em> I did was to embark on a listening tour. I came to your high streets, community centres, schools, hospitals and more to hear from you about the things that you thought the Government should be doing. And in doing so, I came up with a list of four priorities – detailed down below – that you wanted the Government to focus on.</p>
-        <p>And then I got to work.</p>
-        <p>In the months since, my Government has been making things happen, delivering on those priorities, and below you can find everything we have done so far.</p>
-        <p>I've listened, I've heard. And now, I'm making things happen.</p>
-		  <p><strong>Eluned Morgan.</strong><br><em>First Minister of Wales and Leader of Welsh Labour.</em></p>
-      </div>
-      <div class="right">
-        <div class="video-container">
-          <iframe src="https://www.youtube.com/embed/lITmfwSTuAs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <header>
+		<center>
+<br><br><br>
+        <h1 style="text-align: center;">Vic & Joe</h1>
+			<center>
+			<div class="textbox">
+        <img style="max-width: 100%" src="https://i.imgur.com/SMiHytg.jpeg" alt="Wedding Image">
+				</div>
+				</center>
+					<div style="max-width: 70%;">
+			<center>
+			<div class="textbox">
+        <h2>Vic and Joe request the pleasure of your company as they get married in the beautiful Bannau Brycheiniog.</h2>
+        <p>We are so excited to spend this day surrounded by our closest friends and family, and would be honored if you would attend. The dress code is whatever you feel comfortable in, but we will be dressed formally, in our wedding best. It is worth noting that we will be getting married on a working farm – so wear heels at your own risk!</p>
+				</div>
+			</center>
+			</div>
+			</center>
+    </header>
+	
+	<!-- START OF TWO COLUMN SECTION -->
+	
+	<div style="padding:30px 0px"></div>
+	
+	<div class="greenbox">
+
+   <div class="container">
+        <div class="box">
+            <!-- Content for Box 1 -->
+            <p class="greenbox_text">When
+			<br><br>
+			<span style="font-size: 32px">26th July, 2025</span>	
+				<br><br><br><br>
+			</p>
+		
         </div>
-      </div>
+	   
+	   
+	    <div class="box2">
+            <!-- Content for Box 1 -->
+            
+			</p>
+		
+        </div>
+	   
+	   
+        <div class="box">
+            <!-- Content for Box 2 -->
+            <p class="greenbox_text">Where
+			<br><br>
+			<span style="font-size: 32px">Sugarloaf Barn</span>	
+				<br><br>
+			<span style="font-size: 22px">Great Blaenawe Farm,<br>
+Abergavenny NP7 7LG</span>	
+			</p>
+        </div>
     </div>
-  </topbox>
 
-  <!-- First Box: IECHYD DA – A HEALTHIER WALES -->
-  <section class="box box1">
-    <div class="row">
-      <div class="left">
-        <h1>Iechyd Da – A Healthier Wales</h1>
-        <p>
-          Creating a healthier Wales is Welsh Labour's number one priority. In the Welsh Labour Government's 2025 budget we had increased funding for the Welsh NHS by £600m, and are cutting NHS waiting times, including for mental health; improving access to social care and services for women’s health. Our achievements since Eluned Morgan became First Minister include:
-        </p>
-        <ul>
-          <li>£50m to cut long hospital waiting times</li>
-          <li>£21m for diagnostic equipment, to speed up testing and treatment</li>
-          <li>5.5% pay award to NHS staff</li>
-          <li>Women’s Health Plan launched</li>
-          <li>All-Wales Fracture Liaison Service - a new way of treating broken bones, rolled out to every health board.</li>
-          <li>North Wales Medical School opened and successfully recruited its first direct intake of students.</li>
-          <li>Bowel cancer screening - thousands more people will automatically receive at-home tests as screening age lowered to 50 in Wales.</li>
-          <li>50-day challenge to improve hospital discharge and community care - Health boards / LAs working together to help people return home from hospital.</li>
-          <li>New app to improve maternity care rolled out across Wales</li>
-        </ul>
-      </div>
-      <div class="right">
-        <img src="https://www.welshlabour.wales/wp-content/uploads/2024/03/website_NHS.png" alt="NHS Image">
-      </div>
+	</div>
+	
+		<!-- END OF TWO COLUMN SECTION -->
+	
+		<!-- START OF RSVP SECTION -->
+	
+	
+	<center>
+	<div class="RSVPbox">
+	
+		<h1>Let us know if you can make it</h1>
+		
+		<p style="text-align: center;">Please begin by entering the email address at which you received your wedding invite.</p>
+		
+		<br><br>
+		
+    <input type="email" id="emailInput" placeholder="Enter your email">
+    <button onclick="checkGuestList()">Check</button>
+
+		<br><br><br>
+		
+		<center>
+    <div id="result1">
+		
+				<center>
+		<div class="resultbox_inside">
+			
+		<center><div class="textbox_result">
+        <h1 style="text-align: left;">Please join us for <em>both</em> our Ceremony and our Reception.</h1>
+			
+        <p>Beginning at 1pm, we will be holding a small ceremony with our closest friends and family. Please ensure you leave plenty of time to arrive at the venue, as there is a shuttle from the car park to the barn.</p>
+		<br><br>
+		
+		
+		<a class="submitbutton" href="LINK"><strong>RSVP</strong></a>	
+			
+		</div></center>
+		
+		
+			<br><br><br><br>
+					</div>
+		</center>
+		
     </div>
-  </section>
+</center>
+		
+		<center>
+    <div id="result2">
+		
+		<center>
+		<div class="resultbox_inside">
 
-  <!-- Second Box: JOBS AND GREEN GROWTH -->
-  <section class="box box2">
-    <div class="row">
-      <div class="left">
-        <h1>Jobs and Green Growth</h1>
-        <p>
-          Creating jobs and growing our economy to tackle the problems of the future is a key priority for Welsh Labour. We are creating green jobs that tackle the climate crisis and restore nature, while making families better off; and are accelerating planning decisions to grow the Welsh economy. Our achievements on this since Eluned Morgan became First Minister include:
-        </p>
-        <ul>
-          <li>Wales at forefront of UK drive to ‘turbocharge’ AI - one of biggest data centres in Europe already in Newport, with plans for more.</li>
-          <li>Launched Wales and Japan 2025, to build economic and cultural links with Japan.</li>
-          <li>Action to accelerate infrastructure planning decisions. New proposals will allow infrastructure planning decisions of national significance to be taken more quickly.</li>
-          <li>5 decisions on major new renewable energy projects approved since September - over 280 MW of renewable energy for Wales – equivalent to power 180,000 Welsh homes.</li>
-          <li>International Investment Summit, London – Wales at the top table, fighting for investment into Wales.</li>
-          <li>Broadband connectivity - £12m investment announced.</li>
-          <li>Shotton Mill, Deeside - secured investment of over £1bn for redevelopment, safeguarding 147 jobs and creating 220 more.</li>
-          <li>Launched the Independent Water Commission, the largest review of the sector since privatisation, alongside UKG.</li>
-          <li>£280,000 Forestry and Timber Skills fund to address skills gaps by subsidising places on accredited forestry and timber supply chain courses.</li>
-          <li>Farming - made £14m available to farmers for further SFS Preparatory Phase schemes.</li>
-          <li>£100,000 to help restore the equivalent of 266 rugby pitches of Welsh seagrass</li>
-        </ul>
-      </div>
-      <div class="right">
-        <img src="https://www.welshlabour.wales/wp-content/uploads/2024/03/website_economy.png" alt="Economy Image">
-      </div>
+		
+		<center><div class="textbox_result">
+        <h1 style="text-align: left;">Please join us for a party to celebrate our new marriage.</h1>
+		
+        <p>Following a very small ceremony, we would like to invite you to join us for a party to celebrate our new marriage. The party will begin from 5.30pm. Please ensure you arrive promptly, as there is a shuttle from the car park to the barn.</p>
+			<br><br>
+		
+		
+		<a class="submitbutton" href="LINK"><strong>RSVP</strong></a>
+				</div></center>
+		
+		
+		
+			<br><br><br><br>
+						</div>
+		</center>
+		
     </div>
-  </section>
+			</center>
 
-  <!-- Third Box: OPPORTUNITY FOR EVERY FAMILY -->
-  <section class="box box3">
-    <div class="row">
-      <div class="left">
-        <h1>Opportunity for Every Family</h1>
-        <p>
-          Another key priority for the Welsh Labour Government is ensuring that Wales is a great place for young people to grow up, and for families to get on. We are boosting standards in schools and colleges and providing more homes for social rent, ensuring every family has the chance to succeed. Our achievements on this since Eluned Morgan became First Minister include:
-        </p>
-        <ul>
-          <li>£120m extra to support local authorities (Dec 2024)</li>
-          <li>£20m extra for HE and FE sectors (Dec 2024)</li>
-          <li>Free School Meals - rolled-out to all pupils in maintained primary schools.</li>
-          <li>5.5% pay award to teachers.</li>
-          <li>E-sgol - rolled out across Wales - video technology to connect classrooms so pupils can study subjects that may not have otherwise been available to them.</li>
-          <li>Literacy and Numeracy - additional £1.1 million to boost existing and successful programmes and provide enhanced support to teachers and learners.</li>
-        </ul>
-      </div>
-      <div class="right">
-        <img src="https://www.welshlabour.wales/wp-content/uploads/2024/03/website_opportunity.png" alt="Opportunity Image">
-      </div>
+    <script>
+        function checkGuestList() {
+            var email = document.getElementById('emailInput').value;
+            var list1 = ['email1@example.com', 'email2@example.com']; // List 1
+            var list2 = ['email3@example.com', 'email4@example.com']; // List 2
+
+            if (list1.includes(email)) {
+                document.getElementById('result1').style.display = 'block';
+                document.getElementById('result2').style.display = 'none';
+            } else if (list2.includes(email)) {
+                document.getElementById('result1').style.display = 'none';
+                document.getElementById('result2').style.display = 'block';
+            } else {
+                document.getElementById('result1').style.display = 'none';
+                document.getElementById('result2').style.display = 'none';
+                alert('You are not on either list. Please contact the event organizer.');
+            }
+        }
+    </script>
+		
+		
+	</div>
+	</center>
+	
+		<!-- END OF RSVP SECTION -->
+	
+		<!-- START OF ACCOMODATION SECTION -->
+	
+		<div style="padding:30px 0px"></div>
+	
+	<div class="greenbox">
+
+		<center>
+		<div class="textbox">
+		
+		<h1 class="greenbox_text">Accomodation</h1>
+		
+		<p class="greenbox_text" style="text-align: justify;">The beautiful market town of Abergavenny has a range of options that should suit everyone. Below we have listed some of our favourites, but there is so much more available, and if you need a hand to pick somewhere feel free to ask! There are also a huge number of beautiful rentals available on airbnb if you are looking for a bit more space.</p>
+			
+			<br><br>
+			
+			<h2 class="greenbox_text"><a href="https://www.abergavennyhotel.com/" style="color:white;">The Abergavenny Hotel</a></h2>
+			<h2 class="greenbox_text"><a href="https://www.angelabergavenny.com/" style="color:white;">The Angel Hotel</a></h2>
+			<h2 class="greenbox_text"><a href="https://kingsarmsabergavenny.co.uk/" style="color:white;">The Kings Arms</a></h2>
+			<h2 class="greenbox_text"><a href="https://www.premierinn.com/gb/en/hotels/wales/monmouthshire/abergavenny/abergavenny.html" style="color:white;">Premiere Inn Abergavenny</a></h2>
+
+			
+			</div>
+			</center>
+		
+		
+		
     </div>
-  </section>
 
-  <!-- Fourth Box: CONNECTING COMMUNITIES -->
-  <section class="box box4">
-    <div class="row">
-      <div class="left">
-        <h1>Connecting Communities</h1>
-        <p>
-          The fourth priority for the Welsh Labour Government is ensuring that communities in Wales are well connected to one another. We are transforming our railways and delivering a better bus network; fixing our roads and empowering local communities to make choices on the speed limits of local roads. Our achievements on this since Eluned Morgan became First Minister include:
-        </p>
-        <ul>
-          <li>
-            20mph - Flintshire County Council has become the first local authority to consult on roads where 20mph may change safely to 30mph, with proposals on two roads:
-            <ul>
-              <li>A5026 in Lloc</li>
-              <li>Part of the A548 Bagillt/Mostyn Road.</li>
-            </ul>
-          </li>
-          <li>Launched task force to maintain long-term stability for Holyhead Port</li>
-          <li>This year, we will have completed the 17.7km dualling of the A465 Heads of the Valleys Road (Hirwaun to Dowlais), to improve accessibility, reduce journey times, provide extra resilience and reliability, and enhance road safety.</li>
-          <li>Invested £10m to transform town and city centres across Wales</li>
-        </ul>
-      </div>
-      <div class="right">
-        <img src="https://www.welshlabour.wales/wp-content/uploads/2025/02/website_transport.png" alt="Transport Image">
-      </div>
-    </div>
-  </section>
+	</div>
 
-  <!-- Footbox -->
-  <footbox>
-    <p>Promoted by Joe Lock on behalf of Welsh Labour, both at 1 Cathedral Road, Cardiff, CF11 9HA</p>
-  </footbox>
+		<!-- END OF ACCOMODATION SECTION -->
+
+		<!-- START OF REGISTRY SECTION -->
+
+<center>
+<div style="padding: 30px;">
+	
+	<div class="textbox">
+	
+	<h1>Registry</h1>
+	
+	
+            <p>Many of you are traveling from far and wide to celebrate with us on a mountainside in Wales, so your presence means the world to us and is all we ask for. If you'd still like to contribute to our honeymoon fund, click below.
+				<br><br><br>
+								
+				
+			</p>
+	
+		<center>
+		<a class="submitbutton" href="LINK"><strong>Contribute</strong></a>
+		</center>
+	
+			<br><br>
+
+		
+       
+	</div>
+	</div>
+</center>
+
+<br><br><br><br>
+
+<div class="footerbox">
+	 
+	<center>
+		<div>
+	 <p>© 2024</p>
+			</div>
+		</center>
+	
+	</div>
 </body>
 </html>

@@ -1,192 +1,182 @@
-/* Global styles */
 body {
-  margin: 0;
-  /* Default body font now uses Nimbus Sans Light */
-  font-family: "nimbus-sans", sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #ffffff; /* white background */
+    color: #000000; /* black text color */
+}
+
+header {
+    width: 100%;
+    background-color: #ffffff; /* white background */
+    text-align: center;
 }
 
 h1 {
-  margin-top: 0;
-  /* H1 elements now use Futura PT Extra Bold with reduced kerning */
-  font-family: "futura-pt", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  letter-spacing: -0.05em;  /* Reduced kerning - adjust as needed */
+    font-weight: 300; /* H2 style weight */
+	font-size: 32px;
+    color: #226f54; /* green color */
 }
+
+h2 {
+    font-weight: 300; /* H2 style weight */
+	font-size: 28px;
+    color: #226f54; /* green color */
+}
+
+
 
 p {
-  margin-bottom: 1em;
-  /* Paragraphs now use Nimbus Sans Light */
-  font-family: "nimbus-sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-weight: 300; /* paragraph style weight */
+    text-align: justify; /* justify paragraph text */
+    margin: 0 auto; /* center the paragraph */
+	font-size: 18px;
 }
 
-/* Flex container for two-column layout */
-.row {
-  display: flex;
-  flex-wrap: wrap;
+img {
+	padding: 30px 0px 30px 0px;
+}
+	
+
+div {
+	padding: 0px;
+	border: 0px;
 }
 
-/* Increase padding for the columns in all boxes and topbox */
-.left, .right {
-  padding: 40px;
-  box-sizing: border-box;
+
+  .textbox {
+		max-width: 40%;
+	padding: 30px 0px 30px 0px;
+	}
+
+  .textbox_result {
+		max-width: 70%;
+	padding: 30px 0px 30px 0px;
+	}
+
+  .RSVPbox {
+		max-width: 40%;
+	padding: 100px 0px 100px 0px;
+	}
+
+.headercontainerbox {
+	max-width: 50%;
 }
 
-/* Global widths for non-topbox rows */
-.left {
-  width: 60%;
-  text-align: left;
-}
-.right {
-  width: 40%;
+.greenbox {
+	background-color: #226f54;
+	padding: 50px 40px 50px 40px;
 }
 
-/* Override widths for the topbox only (50/50 split) */
-topbox .left,
-topbox .right {
-  width: 50%;
+.greenbox_text {
+	color:white;
+	text-align: center;
 }
 
-/* Ensure images fill the right column by default */
-.right img {
-  width: 100%;
-  height: auto;
-  display: block;
+
+
+.container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+		.box2 {
+            width: 200px;
+            height: 0px;
+            margin: 10px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                width: calc(100% - 20px);
+            }
+			
+				.textbox {
+		max-width: 90%;
+	}
+			
+	
+	.RSVPbox {
+		max-width: 90%;
+		padding: 100px 0px 100px 0px;
+	}
+			
+	.registrybox {
+		max-width: 90%;
+		padding: 100px 0px 100px 0px;
+	}
+			
+			.headercontainerbox {
+	max-width: 70%;
+}
+        }
+
+ #emailInput {
+            border: 2px solid #226f54;
+            color: #226f54;
+            font-family: 'Cormorant Garamond', serif;
+            padding: 5px;
+	 		margin: 10px 5px;
+        }
+
+        button {
+            height: 30px;
+            border: 2px solid #226f54;
+            color: #226f54;
+            background-color: transparent;
+            font-family: 'Cormorant Garamond', serif;
+            cursor: pointer;
+            padding: 0px 10px;
+			margin:10px 5px;
+        }
+
+         #result1, #result2 {
+            display: none;
+            margin-top: 10px;
+            border: 2px solid #226f54;
+            padding: 5px 5px;
+            background-color: transparent;
+
+			 }
+
+
+		.resultbox_inside {
+			border: 2px solid #226f54;
+			padding: 20px 50px;
+			
 }
 
-/* Topbox styling (replacing header) */
-topbox {
-  display: block; /* Custom element behaves as a block-level element */
-  background-color: #f5f5f5;
-  text-align: left;
-  margin: 0;
-}
+        .submitbutton {
+            height: 30px;
+            border: 2px solid #226f54;
+            color: white;
+            background-color: #226f54;
+			text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            cursor: pointer;
+            padding: 20px 30px;
+			margin:10px 5px;
+        }
 
-/* Styling for the full-width top header within topbox */
-topbox > h1 {
-  text-align: center;
-  padding: 20px;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  /* Increase font size on desktop so it spans nearly the full width */
-  font-size: clamp(2.5rem, 8vw, 6rem);
-}
-
-/* Media query for mobile adjustments for topbox header */
-@media (max-width: 768px) {
-  topbox > h1 {
-    /* Adjust font size on mobile */
-    font-size: clamp(2rem, 10vw, 4rem);
-    /* Reduce line-height so the words are closer together when stacked */
-    line-height: 0.9;
-  }
-  topbox > h1 span {
-    display: block;
-  }
-  
-  /* Stack columns on mobile */
-  .left, .right {
-    width: 100%;
-  }
-}
-
-/* Coloured Boxes Styles */
-.box {
-  width: 100%;
-  margin: 0;
-  text-align: left;
-}
-
-/* Increase the font size of the h1 in coloured boxes by about 50% */
-.box h1 {
-  font-size: 3.5rem;
-}
-@media (max-width: 768px) {
-  .box h1 {
-    font-size: 3rem;
-  }
-}
-
-/* Content styling for lists inside boxes to match paragraphs */
-.box ul, .box li {
-  font-family: "nimbus-sans", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  margin: 0 0 1em 20px;  /* Indent list items appropriately */
-  padding: 0;
-}
-
-/* Specific box colours */
-.box1 {
-  background-color: #136d82;
-  color: #fff;
-}
-
-.box2 {
-  background-color: #459443;
-  color: #fff;
-}
-
-.box3 {
-  background-color: #f07725;
-  color: #fff;
-}
-
-.box4 {
-  background-color: #ef5d98;
-  color: #fff;
-}
-
-/* 
-  Adjust the right column within coloured boxes so that the image touches
-  the top, bottom, and right edges of the box.
-  We remove top, right, and bottom padding while keeping left padding to separate it from the text.
-*/
-.box .right {
-  padding: 0 0 0 40px;
-}
-
-/* 
-  Make images in coloured boxes fill the right column.
-  Set height: 100% and object-fit: cover so the image covers the container,
-  touching the top, bottom, and right-hand side.
-*/
-.box .right img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* Footbox styling (replacing footer) */
-footbox {
-  display: block; /* Custom element behaves as a block-level element */
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;  /* Increased padding for more space */
-  margin: 0;
-  font-size: 14px;     /* Decreased font size */
-}
-
-/* Responsive YouTube video */
-.video-container {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+.footerbox {
+	background-color:#E9E9E9;
+	color:black;
+	text-align: center;
+	padding: 50px;
 }
