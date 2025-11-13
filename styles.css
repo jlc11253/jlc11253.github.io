@@ -2,181 +2,205 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cormorant Garamond', serif;
-    background-color: #ffffff; /* white background */
-    color: #000000; /* black text color */
+    background-color: #ffffff;
+    color: #000000;
 }
 
 header {
     width: 100%;
-    background-color: #ffffff; /* white background */
+    background-color: #ffffff;
     text-align: center;
 }
 
 h1 {
-    font-weight: 300; /* H2 style weight */
-	font-size: 32px;
-    color: #226f54; /* green color */
+    font-weight: 300;
+    font-size: 32px;
+    color: #226f54;
 }
 
 h2 {
-    font-weight: 300; /* H2 style weight */
-	font-size: 28px;
-    color: #226f54; /* green color */
+    font-weight: 300;
+    font-size: 28px;
+    color: #226f54;
 }
 
-
-
 p {
-    font-weight: 300; /* paragraph style weight */
-    text-align: justify; /* justify paragraph text */
-    margin: 0 auto; /* center the paragraph */
-	font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 18px;
 }
 
 img {
-	padding: 30px 0px 30px 0px;
+    padding: 30px 0px 30px 0px;
 }
-	
 
 div {
-	padding: 0px;
-	border: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
+.textbox {
+    max-width: 40%;
+    padding: 30px 0px 30px 0px;
+}
 
-  .textbox {
-		max-width: 40%;
-	padding: 30px 0px 30px 0px;
-	}
+.textbox_result {
+    max-width: 70%;
+    padding: 30px 0px 30px 0px;
+}
 
-  .textbox_result {
-		max-width: 70%;
-	padding: 30px 0px 30px 0px;
-	}
-
-  .RSVPbox {
-		max-width: 40%;
-	padding: 100px 0px 100px 0px;
-	}
+.RSVPbox {
+    max-width: 40%;
+    padding: 100px 0px 100px 0px;
+}
 
 .headercontainerbox {
-	max-width: 50%;
+    max-width: 50%;
 }
 
 .greenbox {
-	background-color: #226f54;
-	padding: 50px 40px 50px 40px;
+    background-color: #226f54;
+    padding: 50px 40px 50px 40px;
 }
 
 .greenbox_text {
-	color:white;
-	text-align: center;
+    color: white;
+    text-align: center;
 }
-
-
 
 .container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-wrap: wrap;
-        }
-
-        .box {
-            width: 200px;
-            height: 200px;
-            margin: 10px;
-            background-color: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-		.box2 {
-            width: 200px;
-            height: 0px;
-            margin: 10px;
-            background-color: transparent;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        @media (max-width: 600px) {
-            .box {
-                width: calc(100% - 20px);
-            }
-			
-				.textbox {
-		max-width: 90%;
-	}
-			
-	
-	.RSVPbox {
-		max-width: 90%;
-		padding: 100px 0px 100px 0px;
-	}
-			
-	.registrybox {
-		max-width: 90%;
-		padding: 100px 0px 100px 0px;
-	}
-			
-			.headercontainerbox {
-	max-width: 70%;
-}
-        }
-
- #emailInput {
-            border: 2px solid #226f54;
-            color: #226f54;
-            font-family: 'Cormorant Garamond', serif;
-            padding: 5px;
-	 		margin: 10px 5px;
-        }
-
-        button {
-            height: 30px;
-            border: 2px solid #226f54;
-            color: #226f54;
-            background-color: transparent;
-            font-family: 'Cormorant Garamond', serif;
-            cursor: pointer;
-            padding: 0px 10px;
-			margin:10px 5px;
-        }
-
-         #result1, #result2 {
-            display: none;
-            margin-top: 10px;
-            border: 2px solid #226f54;
-            padding: 5px 5px;
-            background-color: transparent;
-
-			 }
-
-
-		.resultbox_inside {
-			border: 2px solid #226f54;
-			padding: 20px 50px;
-			
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-        .submitbutton {
-            height: 30px;
-            border: 2px solid #226f54;
-            color: white;
-            background-color: #226f54;
-			text-decoration: none;
-            font-family: 'Cormorant Garamond', serif;
-            cursor: pointer;
-            padding: 20px 30px;
-			margin:10px 5px;
-        }
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    width: 200px;
+    height: 0px;
+    margin: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ✳️ UPDATED BORDERED INTRO SECTION ✳️ */
+.introbox {
+    max-width: 40%; /* Match image width */
+    margin: 0 auto 50px auto;
+    padding: 30px;
+    border: 5px double #226f54;
+    text-align: left;
+}
+
+.introbox h2 {
+    max-width: 70%; /* match FAQ content width */
+    margin: 0 auto 20px auto;
+    text-align: justify;
+    color: #226f54;
+}
+
+/* Make paragraphs narrower within the intro box to match FAQ text width visually */
+.introbox p {
+    max-width: 70%; /* match FAQ content width */
+    margin: 0 auto 20px auto;
+    text-align: justify;
+}
+
+/* Buttons and Inputs */
+#emailInput {
+    border: 2px solid #226f54;
+    color: #226f54;
+    font-family: 'Cormorant Garamond', serif;
+    padding: 5px;
+    margin: 10px 5px;
+}
+
+button {
+    height: 30px;
+    border: 2px solid #226f54;
+    color: #226f54;
+    background-color: transparent;
+    font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+    padding: 0px 10px;
+    margin: 10px 5px;
+}
+
+#result1, #result2 {
+    display: none;
+    margin-top: 10px;
+    border: 2px solid #226f54;
+    padding: 5px 5px;
+    background-color: transparent;
+}
+
+.resultbox_inside {
+    border: 2px solid #226f54;
+    padding: 20px 50px;
+}
+
+.submitbutton {
+    height: 30px;
+    border: 2px solid #226f54;
+    color: white;
+    background-color: #226f54;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+    cursor: pointer;
+    padding: 20px 30px;
+    margin: 10px 5px;
+}
 
 .footerbox {
-	background-color:#E9E9E9;
-	color:black;
-	text-align: center;
-	padding: 50px;
+    background-color: #E9E9E9;
+    color: black;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .box {
+        width: calc(100% - 20px);
+    }
+
+    .textbox {
+        max-width: 90%;
+    }
+
+    .RSVPbox {
+        max-width: 90%;
+        padding: 100px 0px 100px 0px;
+    }
+
+    .registrybox {
+        max-width: 90%;
+        padding: 100px 0px 100px 0px;
+    }
+
+    .headercontainerbox {
+        max-width: 70%;
+    }
+
+    .introbox {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    .introbox p {
+        max-width: 100%;
+    }
 }
